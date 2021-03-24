@@ -1,6 +1,11 @@
 document.getElementById("testing").innerHTML = "INI DARI JAVASCRIPT";
 
+//===================================================================================
+//===================================================================================
+//===================================================================================
+
 //Primitive Data Types
+
 //var
 //let
 //const
@@ -28,7 +33,10 @@ var kosong = null; //null
 console.log(hello);
 console.log(kosong);
 
+//===================================================================================
+
 //Non Primitive Data Types
+
 //Array merupakan sebuah type data yang mampu menyimpan berbagai macam nilai seperti string, number, boolean hingga object
 //Index merupakan idetifikasi setiap value pada array
 //Index dimulai dari 0
@@ -95,3 +103,67 @@ console.log(dataDedi, dataDinda);
 //menampilkan tanggal sekarang
 var tanggal = new Date();
 console.log(tanggal);
+
+//===================================================================================
+//===================================================================================
+//===================================================================================
+
+//Function
+
+//regular function
+function printHelloWorld(text) {
+  console.log(text);
+}
+
+printHelloWorld("Hello Dumbways");
+printHelloWorld("Hello Kelas Persiapan");
+
+//regular function dengan parameter
+function operasiPengurangan(number1, number2) {
+  console.log(number1 - number2);
+  return number1 - number2;
+}
+
+//regular function dengan expression
+var sumOperation = function operasiPenjumlahan(number1, number2) {
+  console.log(number1 + number2);
+  return number1 + number2;
+};
+
+var hasil = sumOperation(1, 4);
+var hasil2 = sumOperation(100, 30);
+
+var hasil3 = operasiPengurangan(10, 4) + sumOperation(100, 50);
+
+console.log(hasil);
+console.log(hasil2);
+
+console.log(hasil3);
+
+//variable dengan anonymous function
+
+var helloGuys = function () {
+  alert("Hello All");
+};
+
+var hello = function () {
+  return "hello world";
+};
+
+//global function
+function showGreeting() {
+  return "Selamat Sore";
+}
+
+//nested function
+function showMessage() {
+  //scope / local function
+  function showHello() {
+    return "hello semua ";
+  }
+
+  return showHello() + showGreeting();
+}
+
+console.log(showMessage());
+console.log(showGreeting());
