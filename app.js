@@ -29,3 +29,69 @@ console.log(hello);
 console.log(kosong);
 
 //Non Primitive Data Types
+//Array merupakan sebuah type data yang mampu menyimpan berbagai macam nilai seperti string, number, boolean hingga object
+//Index merupakan idetifikasi setiap value pada array
+//Index dimulai dari 0
+var namaAnakKelasPersiapan = ["Cyra", "Orbit", "Iqbal", "Rudi", "Tito"]; //array of strings
+var tahun = [2020, 2021, 2022]; //array of numbers
+var boolean = [true, false, true]; //array of boolean
+
+console.log(namaAnakKelasPersiapan);
+console.log(tahun);
+console.log(boolean);
+//menampilkan value array menggunakan index
+console.log(namaAnakKelasPersiapan[3]);
+
+var profile = {
+  name: "Putri Shina",
+  address: "Bandung",
+  study: "UI",
+  email: "putri@gmail.com",
+  semester: 5,
+};
+
+const profile2 = ["Putri Shina", "Bandung", "UI", "putri@gmail.com", 5];
+
+console.log(profile2[3]);
+console.log(profile.email);
+
+console.log(profile);
+
+//cara akses spesifik object properties pada sebuah object
+console.log(profile.name);
+console.log(profile.address);
+console.log(profile.study);
+
+//array of object
+const muridMurid = [
+  {
+    name: "Bayu",
+    jk: "Laki-laki",
+  },
+  {
+    name: "Dedi",
+    jk: "Laki-laki",
+  },
+  {
+    name: "Dinda",
+    jk: "Perempuan",
+  },
+];
+
+//menampung sebuah data dari array of object pada variable
+var dataDedi = muridMurid[1].name;
+var dataDinda = muridMurid[2].name;
+
+//menampilkan data keseluruhan sebuah array
+console.log(muridMurid);
+
+//memilih value dari sebuah properti object pada array
+console.log(muridMurid[2].name); //dinda
+
+//menampilkan 2 value secara bersamaan
+console.log(muridMurid[1].name, muridMurid[2].name);
+console.log(dataDedi, dataDinda);
+
+//menampilkan tanggal sekarang
+var tanggal = new Date();
+console.log(tanggal);
