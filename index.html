@@ -7,11 +7,33 @@
 </head>
 
 <body>
-    <h1 class="text-red">Judul ini harus warna merah</h1>
-    <h1 class="text-green" id="testing">Judul ini harus warna hijau</h1>
-    <h1 class="text-blue">Judul ini harus warna biru</h1>
 
-    <script src="app.js"></script>
+
+    <form>
+        <h3>Inputkan jumlah perulangan</h3>
+        <input type="number" id="input-perulangan" onchange="printWord()">
+        <button type="button" onclick="printWord()">Submit</button>
+    </form>
+
+
+
+    <h3>Output:</h3>
+    <ul id="output-perulangan">
+
+    </ul>
+
+    <form>
+        <input type="text" id="first-name" placeholder="Input Your Name">
+        <input type="text" id="last-name" placeholder="Input Your Name">
+        <input type="text" id="gender" placeholder="Input Your Gender">
+        <button onclick="printBiodata()" type="button">Print Nama</button>
+    </form>
+
+    <h3>Ouput Biodata</h3>
+
+    <div id="output-biodata"></div>
+
+    <script src="3.Loop.js"></script>
 </body>
 
 </html>
