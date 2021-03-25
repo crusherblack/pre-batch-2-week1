@@ -1,0 +1,74 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 50px;
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: rgb(116, 116, 116);
+}
+
+.hero {
+  height: 60vh;
+
+  display: flex;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-container {
+  width: 300px;
+}
+
+.hero-right {
+  flex: 1;
+}
+
+.my-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  min-height: 60vh;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  min-height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  height: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+}

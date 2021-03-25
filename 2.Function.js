@@ -61,3 +61,22 @@ function showMessage() {
 
 console.log(showMessage());
 console.log(showGreeting());
+
+//arrow Function ES6
+
+function printMyName() {
+  return "My Name is Fadhil";
+}
+
+printMyName();
+
+var printMyName2 = () => {
+  return "My Name is Fadhil 2";
+};
+
+//jika return 1 baris code saja
+var printMyName3 = () => "My Name is Fadhil 2";
+
+printMyName2();
+
+printMyName3();
