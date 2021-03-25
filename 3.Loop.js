@@ -47,3 +47,38 @@ function printBiodata() {
 
   document.getElementById("output-biodata").innerHTML = output;
 }
+
+var animals = ["rabbit", "cow", "bird", "chicken", "lion", "monkey"];
+//cara menghitung panjang array
+console.log(animals.length);
+
+var i = 0;
+
+do {
+  console.log(animals[i]);
+  i++;
+} while (i < animals.length);
+
+// for loop
+
+//ruas 1 = perulangan dimulai dari mana
+//ruas 2 = kondisi
+//ruas 3 = increament / pertambahan
+for (i; i < animals.length; i++) {
+  console.log(animals[i]);
+}
+
+//perulangan for in dan for of hanya bisa dilakukan pada array
+
+var cars = ["bmw", "audi", "lamborgini"];
+
+//for in itu adalah perulangan versi simple kita gak perlu
+//mendefinisikan condisi dan increamentnya
+for (var index in cars) {
+  console.log(cars[index]);
+}
+
+//for of melakukan perulangan dengan mengakses secara langsung value/nilai dari array
+for (var car of cars) {
+  console.log(car);
+}
