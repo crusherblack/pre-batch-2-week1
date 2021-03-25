@@ -13,3 +13,55 @@ body {
 .text-blue {
   color: blue;
 }
+
+.lampu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.my-button {
+  font-size: 20px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+}
+
+.my-button:active,
+.my-button:focus {
+  border: none;
+  outline: none;
+}
+
+.my-button:hover {
+  cursor: pointer;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-red:hover {
+  background-color: rgb(211, 9, 9);
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-yellow:hover {
+  background-color: rgb(209, 209, 8);
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-green:hover {
+  background-color: rgb(2, 87, 2);
+}
